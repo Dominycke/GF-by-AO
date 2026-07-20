@@ -1,0 +1,1064 @@
+<!-- By Ayram Ochoa -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gastro Fun País Vasco · Alejandro Mexsen by Viajes Gales</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap');
+
+  .page {
+    --ink: #101010;
+    --muted: #6f695f;
+    --paper: #f5efe5;
+    --paper2: #fbf8f2;
+    --line: #ded2c1;
+    --accent: #9a7447;
+    --wine: #4b2022;
+    --green: #13291f;
+  }
+
+  .page,
+  .page * {
+    box-sizing: border-box
+  }
+
+  .page {
+    margin: 0 auto;
+    background: #fff;
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.55;
+    max-width: 1180px;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, .12)
+  }
+
+  .page a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(154, 116, 71, .45)
+  }
+
+  .page a:hover {
+    color: var(--accent)
+  }
+
+  .page .cover {
+    min-height: 760px;
+    padding: 44px 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    background: linear-gradient(120deg, rgba(19, 41, 31, .95), rgba(75, 32, 34, .84) 58%, rgba(0, 0, 0, .64)), radial-gradient(circle at 74% 28%, rgba(255, 255, 255, .13), transparent 34%), linear-gradient(45deg, #13291f, #4b2022)
+  }
+
+  .page .cover h1 {
+    color: #fff !important;
+  }
+
+  .page .top {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: flex-start
+  }
+
+  .page .logo {
+    width: 116px;
+    height: auto;
+    background: rgba(255, 255, 255, .92);
+    border-radius: 20px;
+    padding: 12px
+  }
+
+  .page .label {
+    font-size: 12px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: .9;
+    text-align: right
+  }
+
+  .page h1,
+  .page h2,
+  .page h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: .98;
+    margin: 0;
+    letter-spacing: -.035em
+  }
+
+  .page h1 {
+    font-size: 92px;
+    max-width: 920px;
+    margin-bottom: 22px
+  }
+
+  .page .subtitle {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 32px;
+    max-width: 800px;
+    line-height: 1.15;
+    margin-bottom: 26px
+  }
+
+  .page .cover-copy {
+    font-size: 18px;
+    max-width: 850px;
+    color: #f6efe7
+  }
+
+  .page .details {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 28px
+  }
+
+  .page .pill {
+    border: 1px solid rgba(255, 255, 255, .32);
+    border-radius: 999px;
+    padding: 10px 14px;
+    font-size: 13px;
+    letter-spacing: .08em;
+    text-transform: uppercase
+  }
+
+  .page .section {
+    padding: 56px 54px;
+    border-bottom: 1px solid var(--line)
+  }
+
+  .page .intro {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 42px;
+    background: var(--paper2)
+  }
+
+  .page h2 {
+    font-size: 48px;
+    margin-bottom: 22px
+  }
+
+  .page .lead {
+    font-size: 19px;
+    text-align: justify;
+    color: #29241f
+  }
+
+  .page .lead p+p {
+    margin-top: 18px
+  }
+
+  .page .drop:first-letter {
+    float: left;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 78px;
+    line-height: .8;
+    padding: 9px 10px 0 0;
+    color: var(--accent)
+  }
+
+  .page .panel {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 28px;
+    padding: 28px;
+    align-self: start
+  }
+
+  .page .panel-title {
+    font-size: 12px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 800;
+    margin-bottom: 18px
+  }
+
+  .page .stat {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 14px;
+    padding: 12px 0;
+    border-top: 1px solid #eadfce
+  }
+
+  .page .stat:first-of-type {
+    border-top: none
+  }
+
+  .page .stat span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: var(--muted);
+    font-weight: 700
+  }
+
+  .page .stat strong {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 24px;
+    line-height: 1.1
+  }
+
+  .page .route {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-top: 24px
+  }
+
+  .page .route div {
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 18px;
+    background: #fff
+  }
+
+  .page .route b {
+    display: block;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 24px
+  }
+
+  .page .route span {
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: .1em;
+    text-transform: uppercase
+  }
+
+  .page .days {
+    display: grid;
+    gap: 20px;
+    margin-top: 26px
+  }
+
+  .page .day {
+    border: 1px solid var(--line);
+    border-radius: 28px;
+    padding: 28px;
+    background: linear-gradient(180deg, #fff, #fffaf3)
+  }
+
+  .page .day-kicker {
+    font-size: 12px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 800;
+    margin-bottom: 10px
+  }
+
+  .page .day h3 {
+    font-size: 35px;
+    margin-bottom: 14px;
+    color: #18130f
+  }
+
+  .page .day p {
+    font-size: 17px;
+    text-align: justify;
+    margin: 0;
+    color: #26211d
+  }
+
+  .page .day-end {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #e3d7c5;
+    display: block
+  }
+
+  .page .info {
+    display: block;
+    position: relative;
+    padding-left: 36px;
+    font-size: 15px
+  }
+
+  .page .info+.info {
+    margin-top: 12px
+  }
+
+  .page .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 17px;
+    line-height: 1.2
+  }
+
+  .page .icon img {
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+
+  .page .info strong {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #3b332c
+  }
+
+  .page .meta-line+.meta-line {
+    margin-top: 4px
+  }
+
+  .page table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    overflow: hidden;
+    background: #fff;
+    margin-top: 22px
+  }
+
+  .page th {
+    background: #e5d9c8;
+    color: #4b3a2a;
+    font-size: 11px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 14px
+  }
+
+  .page td {
+    padding: 15px 14px;
+    border-bottom: 1px solid #eadfce;
+    font-size: 14px;
+    vertical-align: top
+  }
+
+  .page tr:nth-child(even) td {
+    background: #fbf8f2
+  }
+
+  .page tr:last-child td {
+    border-bottom: 0
+  }
+
+  .page .pricing {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-top: 22px
+  }
+
+  .page .price {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    padding: 22px
+  }
+
+  .page .price span {
+    font-size: 11px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 800
+  }
+
+  .page .price strong {
+    display: block;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 32px;
+    color: var(--wine);
+    margin-top: 4px
+  }
+
+  .page .note {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 18px
+  }
+
+  .page .footer {
+    padding: 34px 54px;
+    background: #141414;
+    color: #efe8de;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    font-size: 13px
+  }
+
+  .page .cta {
+    display: inline-block;
+    border: 1px solid #efe8de;
+    border-radius: 999px;
+    padding: 10px 14px;
+    margin-top: 10px
+  }
+
+  @media(max-width:860px) {
+    .page {
+      box-shadow: none
+    }
+
+    .page .cover,
+    .page .section,
+    .page .footer {
+      padding: 34px 24px
+    }
+
+    .page h1 {
+      font-size: 56px
+    }
+
+    .page .intro {
+      grid-template-columns: 1fr
+    }
+
+    .page .route,
+    .page .pricing {
+      grid-template-columns: 1fr
+    }
+
+    .page .stat {
+      grid-template-columns: 1fr
+    }
+  }
+
+  @media print {
+    .page {
+      background: #fff;
+      box-shadow: none
+    }
+
+    .page .section,
+    .page .cover {
+      page-break-inside: avoid
+    }
+
+    .page a {
+      border-bottom: none
+    }
+  }
+
+  .page {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+  }
+
+  .page h1,
+  .page h2,
+  .page h3,
+  .page .subtitle,
+  .page .drop:first-letter,
+  .page .stat strong,
+  .page .route b,
+  .page .price strong {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  }
+
+  .page .cover h1 {
+    color: #ff251b;
+  }
+</style>
+<main class="page">
+  <section class="cover">
+    <div class="top"><img class="logo"
+        src="https://raw.githubusercontent.com/Dominycke/GF-by-AO/refs/heads/main/GF%20Japon%20IMG%20directory/imagen-02.png"
+        alt="Viajes Gales">
+      <div class="label">Alejandro Mexsen × Viajes Gales<br>Documento editorial</div>
+    </div>
+    <div>
+      <div class="label" style="text-align:left;margin-bottom:18px">Gastro Fun · País Vasco · Agosto - Septiembre 2026
+      </div>
+      <h1>Gastro Fun País Vasco</h1>
+      <div class="subtitle">Una travesía por mesas de culto, ciudades con carácter y la arquitectura silenciosa del
+        vino.</div>
+      <p class="cover-copy">Madrid, León, Bilbao, San Sebastián y Rioja aparecen aquí como capítulos de una misma
+        conversación: producto, territorio, memoria y una forma de viajar donde cada mesa tiene una razón de ser.</p>
+      <div class="details"><span class="pill">22 agosto - 03 septiembre</span><span class="pill">Base doble: $8,995 USD
+          pp</span><span class="pill">Single: + $2,571 USD</span><span class="pill">Aparta con $500 USD</span></div>
+    </div>
+  </section>
+  <section class="section intro">
+    <div>
+      <h2>El espíritu del viaje</h2>
+      <div class="lead">
+        <p class="drop">Este itinerario no busca acumular restaurantes, sino construir una lectura gastronómica del
+          norte de España. La ruta inicia en Madrid, toma profundidad histórica en León, cruza hacia Bilbao por Burgos y
+          termina en la luz del viñedo riojano.</p>
+        <p>El ritmo está pensado para que las grandes comidas tengan espacio propio. Las visitas culturales funcionan
+          como marco, no como ruido: museos, barrios, rías, bahías y bodegas ordenan el día con naturalidad, dejando que
+          cada experiencia llegue en el momento correcto.</p>
+      </div>
+    </div>
+    <aside class="panel">
+      <div class="panel-title">Resumen ejecutivo</div>
+      <div class="stat"><span>Duración</span><strong>13 días / 12 noches</strong></div>
+      <div class="stat"><span>Destinos</span><strong>Madrid, León, Bilbao, San Sebastián, Rioja</strong></div>
+      <div class="stat"><span>Estilo</span><strong>Gastronomía curada, cultura y vino</strong></div>
+      <div class="stat"><span>Hoteles</span><strong>4* superior, 5* y boutique con carácter</strong></div>
+      <div class="stat"><span>Pagos</span><strong>6 meses: $1,499 USD · 12 meses: $809 USD</strong></div>
+    </aside>
+  </section>
+  <section class="section">
+    <h2>Ruta editorial</h2>
+    <p class="lead">La secuencia evita saltos innecesarios y aprovecha la lógica natural del viaje: capital, Castilla,
+      País Vasco y viñedo. Cada parada prepara la siguiente.</p>
+    <div class="route">
+      <div><span>Inicio</span><b>Madrid</b></div>
+      <div><span>Historia</span><b>León</b></div>
+      <div><span>Arte</span><b>Bilbao</b></div>
+      <div><span>Costa</span><b>San Sebastián</b></div>
+      <div><span>Vino</span><b>Rioja</b></div>
+    </div>
+  </section>
+  <section class="section">
+    <h2>Itinerario día por día</h2>
+    <div class="days">
+      <article class="day">
+        <div class="day-kicker">22 agosto 2026</div>
+        <h3>Madrid · llegada y primer pulso gastronómico</h3>
+        <p>El viaje abre en Madrid con una entrada deliberadamente pausada. La ciudad se aborda desde el Barrio de Las
+          Letras, donde la historia literaria convive con galerías, cafés y una energía de calle que prepara el tono del
+          recorrido. La tarde puede reservarse para una selección breve del Thyssen-Bornemisza o para caminar hacia
+          Retiro y Jerónimos, dejando que el primer día respire antes de sentarse a la mesa en una institución
+          madrileña.</p>
+        <div class="day-end">
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f37d.svg"
+                alt="Restaurante"></div>
+            <div><strong>Restaurantes recomendados</strong>
+              <div class="meta-line"><a href="https://www.instagram.com/casa_lhardy/" target="_blank"
+                  rel="noopener">Lhardy</a> — a la carta · cocina histórica madrileña</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3e8.svg"
+                alt="Hotel"></div>
+            <div><strong>Hotel</strong>
+              <div class="meta-line"><a
+                  href="https://www.melia.com/en/hotels/spain/madrid/casa-de-las-artes-melia-collection" target="_blank"
+                  rel="noopener">Casa de las Artes Meliá Collection</a> — Madrid</div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="day">
+        <div class="day-kicker">23 agosto 2026</div>
+        <h3>Madrid · arte, barrio y cocina contemporánea</h3>
+        <p>La jornada mantiene a Madrid en clave cultural, sin perseguir todos sus monumentos. El plan se sostiene entre
+          el eje Prado-Recoletos, el aire creativo de Las Letras y una tarde más ligera para compras puntuales o una
+          pausa de café antes de entrar en una cocina más directa, de producto y gesto contemporáneo. El contraste entre
+          tradición y modernidad marca el primer capítulo gastronómico del viaje.</p>
+        <div class="day-end">
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f37d.svg"
+                alt="Restaurante"></div>
+            <div><strong>Restaurantes recomendados</strong>
+              <div class="meta-line"><a href="https://www.instagram.com/saladedespiece/" target="_blank"
+                  rel="noopener">Sala de Despiece</a> — a la carta · barra contemporánea de producto</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3e8.svg"
+                alt="Hotel"></div>
+            <div><strong>Hotel</strong>
+              <div class="meta-line"><a
+                  href="https://www.melia.com/en/hotels/spain/madrid/casa-de-las-artes-melia-collection" target="_blank"
+                  rel="noopener">Casa de las Artes Meliá Collection</a> — Madrid</div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="day">
+        <div class="day-kicker">24 agosto 2026</div>
+        <h3>León · piedra, vidrieras y memoria urbana</h3>
+        <p>La salida hacia León introduce otra escala de España: más recogida, más mineral, más ligada al Camino y a la
+          arquitectura. El recorrido guiado permite leer la ciudad desde sus capas históricas, con especial atención a
+          la Catedral y sus vidrieras, antes de caminar el Barrio Húmedo sin convertirlo en una ruta de prisa. La mesa
+          del día se mantiene cercana al carácter local.</p>
+        <div class="day-end">
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f37d.svg"
+                alt="Restaurante"></div>
+            <div><strong>Restaurantes recomendados</strong>
+              <div class="meta-line"><a href="https://www.instagram.com/racimodeoro_/" target="_blank" rel="noopener">El
+                  Racimo de Oro</a> — a la carta · cocina leonesa tradicional</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3e8.svg"
+                alt="Hotel"></div>
+            <div><strong>Hotel</strong>
+              <div class="meta-line"><a href="https://paradores.es/es/parador-de-leon" target="_blank"
+                  rel="noopener">Parador de León - Hostal de San Marcos</a> — León</div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="day">
+        <div class="day-kicker">25 agosto 2026</div>
+        <h3>León · el rito del producto excepcional</h3>
+        <p>El día se reserva para una experiencia gastronómica de destino: Bodega El Capricho. La jornada puede comenzar
+          sin exceso, con tiempo para volver sobre San Marcos o para una visita breve a la ciudad antes de trasladarse
+          hacia Jiménez de Jamuz. Aquí el viaje entra en una dimensión más esencial: fuego, tiempo y producto como
+          argumento principal.</p>
+        <div class="day-end">
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f37d.svg"
+                alt="Restaurante"></div>
+            <div><strong>Restaurantes recomendados</strong>
+              <div class="meta-line"><a href="https://www.instagram.com/bodegaelcapricho/" target="_blank"
+                  rel="noopener">Bodega El Capricho</a> — menú · culto al buey y a la maduración</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3e8.svg"
+                alt="Hotel"></div>
+            <div><strong>Hotel</strong>
+              <div class="meta-line"><a href="https://paradores.es/es/parador-de-leon" target="_blank"
+                  rel="noopener">Parador de León - Hostal de San Marcos</a> — León</div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="day">
+        <div class="day-kicker">26 agosto 2026</div>
+        <h3>Ruta a Bilbao · Burgos como pausa de camino</h3>
+        <p>La ruta hacia Bilbao se construye con una escala inteligente en Burgos. No se trata solo de detenerse: la
+          Catedral, el Paseo del Espolón y el ambiente castellano funcionan como transición entre León y el País Vasco.
+          Landa aparece como una parada de carretera elevada a institución, perfecta para sostener el ritmo antes de
+          llegar a Bilbao y cambiar de registro hacia arte, ría y arquitectura contemporánea.</p>
+        <div class="day-end">
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f37d.svg"
+                alt="Restaurante"></div>
+            <div><strong>Restaurantes recomendados</strong>
+              <div class="meta-line"><a href="https://www.instagram.com/l_a_n_d_a_/" target="_blank"
+                  rel="noopener">Landa</a> — a la carta · clásico castellano de carretera noble</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3e8.svg"
+                alt="Hotel"></div>
+            <div><strong>Hotel</strong>
+              <div class="meta-line"><a href="https://hoteltheartist.com/" target="_blank" rel="noopener">The Artist
+                  Grand Hotel of Art</a> — Bilbao</div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="day">
+        <div class="day-kicker">27 agosto 2026</div>
+        <h3>Bilbao · ciudad de ría, Guggenheim y alta cocina</h3>
+        <p>Bilbao se entiende mejor desde la ría: Abandoibarra, el Ensanche y el Guggenheim trazan la transformación de
+          una ciudad industrial en capital cultural. El tour guiado y la visita al museo dan estructura al día, mientras
+          que la tarde se reserva para descansar y llegar con energía a Azurmendi, una experiencia donde sostenibilidad,
+          técnica y emoción dialogan con el paisaje vasco.</p>
+        <div class="day-end">
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f37d.svg"
+                alt="Restaurante"></div>
+            <div><strong>Restaurantes recomendados</strong>
+              <div class="meta-line"><a href="https://www.instagram.com/azurmendi_atxa/" target="_blank"
+                  rel="noopener">Azurmendi</a> — menú de degustación y maridaje · Eneko Atxa</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3e8.svg"
+                alt="Hotel"></div>
+            <div><strong>Hotel</strong>
+              <div class="meta-line"><a href="https://hoteltheartist.com/" target="_blank" rel="noopener">The Artist
+                  Grand Hotel of Art</a> — Bilbao</div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="day">
+        <div class="day-kicker">28 agosto 2026</div>
+        <h3>Bilbao · arte interior y cocina de temporada</h3>
+        <p>Después de un día de grandes gestos, Bilbao pide una lectura más íntima: librerías, galerías, cafés del
+          Ensanche y un paseo más lento junto a la ría. La visita se mantiene flexible para no saturar el capítulo
+          gastronómico, que continúa en Nerua, dentro del universo Guggenheim, con una cocina marcada por estaciones,
+          huertas, mar y granjas del entorno.</p>
+        <div class="day-end">
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f37d.svg"
+                alt="Restaurante"></div>
+            <div><strong>Restaurantes recomendados</strong>
+              <div class="meta-line"><a href="https://www.instagram.com/neruaguggenheimbilbao/" target="_blank"
+                  rel="noopener">Nerua</a> — menú de degustación y maridaje · cocina de temporada</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3e8.svg"
+                alt="Hotel"></div>
+            <div><strong>Hotel</strong>
+              <div class="meta-line"><a href="https://hoteltheartist.com/" target="_blank" rel="noopener">The Artist
+                  Grand Hotel of Art</a> — Bilbao</div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="day">
+        <div class="day-kicker">29 agosto 2026</div>
+        <h3>San Sebastián y Getaria · costa, brasa y txakoli</h3>
+        <p>La entrada a San Sebastián debe sentirse luminosa: bahía, mar y una geografía que cambia el pulso del viaje.
+          La jornada mira hacia Getaria para rendir homenaje al pescado a la brasa en Elkano y, después, al paisaje de
+          costa y vino con una experiencia de txakoli en clave marítima. El día se cierra con la elegancia tranquila de
+          Donostia, evitando las horas más densas del casco antiguo.</p>
+        <div class="day-end">
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f37d.svg"
+                alt="Restaurante"></div>
+            <div><strong>Restaurantes recomendados</strong>
+              <div class="meta-line"><a href="https://www.instagram.com/elkano_jatetxea/" target="_blank"
+                  rel="noopener">Elkano</a> — menú de degustación · templo marinero en Getaria</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3e8.svg"
+                alt="Hotel"></div>
+            <div><strong>Hotel</strong>
+              <div class="meta-line"><a href="https://conventosanmartin.zenithoteles.com/en/" target="_blank"
+                  rel="noopener">Zenit Convento San Martín</a> — San Sebastián</div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="day">
+        <div class="day-kicker">30 agosto 2026</div>
+        <h3>San Sebastián · La Concha y la cultura del pintxo</h3>
+        <p>San Sebastián se recorre sin ansiedad: la bahía de La Concha, los miradores de Igueldo y una lectura guiada
+          de la ciudad permiten entender por qué Donostia concentra tanta identidad en tan poco espacio. La noche se
+          dedica al pintxo, no como simple tapeo, sino como lenguaje local: barras, producto, conversación y una
+          precisión que forma parte de la cultura vasca.</p>
+        <div class="day-end">
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f37d.svg"
+                alt="Restaurante"></div>
+            <div><strong>Restaurantes recomendados</strong>
+              <div class="meta-line"><a href="https://www.instagram.com/sspintxostours/" target="_blank"
+                  rel="noopener">Pintxos Tour San Sebastián</a> — tour guiado · cultura del pintxo</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3e8.svg"
+                alt="Hotel"></div>
+            <div><strong>Hotel</strong>
+              <div class="meta-line"><a href="https://conventosanmartin.zenithoteles.com/en/" target="_blank"
+                  rel="noopener">Zenit Convento San Martín</a> — San Sebastián</div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="day">
+        <div class="day-kicker">31 agosto 2026</div>
+        <h3>San Sebastián a Rioja · memoria vasca y llegada al viñedo</h3>
+        <p>La mañana conserva una última mirada donostiarra con Bodegón Alejandro, una mesa de tradición vasca en la
+          Parte Vieja. Después, el viaje cambia de textura hacia Briones: piedra medieval, viñedo y luz dorada. La
+          llegada a Santa María Briones permite bajar revoluciones antes de cenar en Allegar, donde La Rioja se
+          interpreta desde una cocina precisa, local y contemporánea.</p>
+        <div class="day-end">
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f37d.svg"
+                alt="Restaurante"></div>
+            <div><strong>Restaurantes recomendados</strong>
+              <div class="meta-line"><a href="https://www.instagram.com/restaurantebodegonalejandro/" target="_blank"
+                  rel="noopener">Bodegón Alejandro</a> — menú de degustación · memoria vasca</div>
+              <div class="meta-line"><a href="https://www.instagram.com/allegarrestaurant/" target="_blank"
+                  rel="noopener">Allegar</a> — cena · menú fijo en Briones</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3e8.svg"
+                alt="Hotel"></div>
+            <div><strong>Hotel</strong>
+              <div class="meta-line"><a href="https://santamariabriones.com/en/" target="_blank" rel="noopener">Santa
+                  María Briones</a> — Rioja / Briones</div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="day">
+        <div class="day-kicker">01 septiembre 2026</div>
+        <h3>Rioja · bodegas, arquitectura y paisaje</h3>
+        <p>El día se dedica a la Rioja con una cadencia de cata, arquitectura y pausa. CVNE introduce la historia del
+          vino desde Haro y su tradición centenaria; Baigorri aporta una lectura más arquitectónica, con su caja de
+          cristal integrada en el paisaje de Rioja Alavesa. Entre visitas, conviene dejar espacio para mirar el viñedo
+          sin convertir el día en una sucesión de copas.</p>
+        <div class="day-end">
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f37d.svg"
+                alt="Restaurante"></div>
+            <div><strong>Restaurantes recomendados</strong>
+              <div class="meta-line"><a href="https://www.instagram.com/cvnevino/" target="_blank"
+                  rel="noopener">CVNE</a> — visita y cata · historia vinícola</div>
+              <div class="meta-line"><a href="https://www.instagram.com/bodegasbaigorri/" target="_blank"
+                  rel="noopener">Bodegas Baigorri</a> — visita, tapas y cata · arquitectura del vino</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3e8.svg"
+                alt="Hotel"></div>
+            <div><strong>Hotel</strong>
+              <div class="meta-line"><a href="https://santamariabriones.com/en/" target="_blank" rel="noopener">Santa
+                  María Briones</a> — Rioja / Briones</div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="day">
+        <div class="day-kicker">02 septiembre 2026</div>
+        <h3>Rioja · precisión, prestigio y una mesa icónica</h3>
+        <p>La Rioja se cierra con dos nombres de peso. Bodega Contador aporta una escala más íntima, asociada a
+          precisión enológica y producción de culto; Marqués de Riscal suma una lectura icónica, donde vino,
+          arquitectura y gastronomía se encuentran en un paisaje reconocible. Es un día para aceptar el ritmo del
+          viñedo: pausas, conversación y una cierta solemnidad sin rigidez.</p>
+        <div class="day-end">
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f37d.svg"
+                alt="Restaurante"></div>
+            <div><strong>Restaurantes recomendados</strong>
+              <div class="meta-line"><a href="https://www.instagram.com/bodega_contador/" target="_blank"
+                  rel="noopener">Bodega Contador</a> — cata · vinos de Benjamín Romeo</div>
+              <div class="meta-line"><a href="https://www.instagram.com/marquesderiscal/" target="_blank"
+                  rel="noopener">Marqués de Riscal</a> — cata y comida · icono riojano</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3e8.svg"
+                alt="Hotel"></div>
+            <div><strong>Hotel</strong>
+              <div class="meta-line"><a href="https://santamariabriones.com/en/" target="_blank" rel="noopener">Santa
+                  María Briones</a> — Rioja / Briones</div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="day">
+        <div class="day-kicker">03 septiembre 2026</div>
+        <h3>Madrid · cierre gastronómico</h3>
+        <p>El regreso a Madrid funciona como epílogo. Salesas ofrece una última caminata de diseño, boutiques y
+          galerías, con margen para compras gourmet o una visita privada corta según energía. La cena en OSA cierra el
+          viaje con una cocina madrileña de mirada nueva: discreta, técnica y con carácter, perfecta para terminar
+          después de una ruta dominada por producto, vino y territorio.</p>
+        <div class="day-end">
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f37d.svg"
+                alt="Restaurante"></div>
+            <div><strong>Restaurantes recomendados</strong>
+              <div class="meta-line"><a href="https://www.instagram.com/osa.restaurante/" target="_blank"
+                  rel="noopener">OSA</a> — menú y maridaje · cocina contemporánea madrileña</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3e8.svg"
+                alt="Hotel"></div>
+            <div><strong>Hotel</strong>
+              <div class="meta-line"><a
+                  href="https://www.melia.com/en/hotels/spain/madrid/casa-de-las-artes-melia-collection" target="_blank"
+                  rel="noopener">Casa de las Artes Meliá Collection</a> — Madrid</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="section">
+    <h2>Experiencias gastronómicas previstas</h2>
+    <p class="lead">Selección de mesas, bodegas y experiencias vinculadas al recorrido. Cada nombre está enlazado a su
+      Instagram para consulta visual y seguimiento de actualidad.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Destino</th>
+          <th>Experiencia</th>
+          <th>Lectura editorial</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>22 agosto</td>
+          <td>Madrid</td>
+          <td><a href="https://www.instagram.com/casa_lhardy/" target="_blank" rel="noopener">Lhardy</a></td>
+          <td>Alta cocina española histórica</td>
+        </tr>
+        <tr>
+          <td>23 agosto</td>
+          <td>Madrid</td>
+          <td><a href="https://www.instagram.com/saladedespiece/" target="_blank" rel="noopener">Sala de Despiece</a>
+          </td>
+          <td>Barra contemporánea de producto</td>
+        </tr>
+        <tr>
+          <td>24 agosto</td>
+          <td>León</td>
+          <td><a href="https://www.instagram.com/racimodeoro_/" target="_blank" rel="noopener">El Racimo de Oro</a></td>
+          <td>Cocina leonesa tradicional</td>
+        </tr>
+        <tr>
+          <td>25 agosto</td>
+          <td>León / Jiménez de Jamuz</td>
+          <td><a href="https://www.instagram.com/bodegaelcapricho/" target="_blank" rel="noopener">Bodega El
+              Capricho</a></td>
+          <td>Producto, buey y fuego</td>
+        </tr>
+        <tr>
+          <td>26 agosto</td>
+          <td>Burgos</td>
+          <td><a href="https://www.instagram.com/l_a_n_d_a_/" target="_blank" rel="noopener">Landa</a></td>
+          <td>Clásico castellano</td>
+        </tr>
+        <tr>
+          <td>27 agosto</td>
+          <td>Bilbao</td>
+          <td><a href="https://www.instagram.com/azurmendi_atxa/" target="_blank" rel="noopener">Azurmendi</a></td>
+          <td>Tres estrellas Michelin</td>
+        </tr>
+        <tr>
+          <td>28 agosto</td>
+          <td>Bilbao</td>
+          <td><a href="https://www.instagram.com/neruaguggenheimbilbao/" target="_blank" rel="noopener">Nerua</a></td>
+          <td>Cocina de temporada en el Guggenheim</td>
+        </tr>
+        <tr>
+          <td>29 agosto</td>
+          <td>Getaria</td>
+          <td><a href="https://www.instagram.com/elkano_jatetxea/" target="_blank" rel="noopener">Elkano</a></td>
+          <td>Pescado a la brasa</td>
+        </tr>
+        <tr>
+          <td>30 agosto</td>
+          <td>San Sebastián</td>
+          <td><a href="https://www.instagram.com/sspintxostours/" target="_blank" rel="noopener">Pintxos Tour San
+              Sebastián</a></td>
+          <td>Cultura del pintxo</td>
+        </tr>
+        <tr>
+          <td>31 agosto</td>
+          <td>San Sebastián</td>
+          <td><a href="https://www.instagram.com/restaurantebodegonalejandro/" target="_blank" rel="noopener">Bodegón
+              Alejandro</a></td>
+          <td>Tradición vasca</td>
+        </tr>
+        <tr>
+          <td>31 agosto</td>
+          <td>Briones</td>
+          <td><a href="https://www.instagram.com/allegarrestaurant/" target="_blank" rel="noopener">Allegar</a></td>
+          <td>Cocina riojana contemporánea</td>
+        </tr>
+        <tr>
+          <td>01 septiembre</td>
+          <td>Rioja</td>
+          <td><a href="https://www.instagram.com/cvnevino/" target="_blank" rel="noopener">CVNE</a></td>
+          <td>Visita y cata</td>
+        </tr>
+        <tr>
+          <td>01 septiembre</td>
+          <td>Rioja Alavesa</td>
+          <td><a href="https://www.instagram.com/bodegasbaigorri/" target="_blank" rel="noopener">Bodegas Baigorri</a>
+          </td>
+          <td>Visita, tapas y cata</td>
+        </tr>
+        <tr>
+          <td>02 septiembre</td>
+          <td>San Vicente de la Sonsierra</td>
+          <td><a href="https://www.instagram.com/bodega_contador/" target="_blank" rel="noopener">Bodega Contador</a>
+          </td>
+          <td>Cata</td>
+        </tr>
+        <tr>
+          <td>02 septiembre</td>
+          <td>Elciego</td>
+          <td><a href="https://www.instagram.com/marquesderiscal/" target="_blank" rel="noopener">Marqués de Riscal</a>
+          </td>
+          <td>Cata y comida</td>
+        </tr>
+        <tr>
+          <td>03 septiembre</td>
+          <td>Madrid</td>
+          <td><a href="https://www.instagram.com/osa.restaurante/" target="_blank" rel="noopener">OSA</a></td>
+          <td>Menú y maridaje</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="section">
+    <h2>Hoteles previstos</h2>
+    <p class="lead">Hoteles elegidos por ubicación, carácter y coherencia con el tono del viaje. Cada nombre enlaza a su
+      página oficial.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Fechas</th>
+          <th>Ciudad</th>
+          <th>Hotel</th>
+          <th>Perfil</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>22 - 23 agosto</td>
+          <td>Madrid</td>
+          <td><a href="https://www.melia.com/en/hotels/spain/madrid/casa-de-las-artes-melia-collection" target="_blank"
+              rel="noopener">Casa de las Artes Meliá Collection</a></td>
+          <td>The Meliá Collection</td>
+        </tr>
+        <tr>
+          <td>24 - 25 agosto</td>
+          <td>León</td>
+          <td><a href="https://paradores.es/es/parador-de-leon" target="_blank" rel="noopener">Parador de León - Hostal
+              de San Marcos</a></td>
+          <td>Parador histórico</td>
+        </tr>
+        <tr>
+          <td>26 - 28 agosto</td>
+          <td>Bilbao</td>
+          <td><a href="https://hoteltheartist.com/" target="_blank" rel="noopener">The Artist Grand Hotel of Art</a>
+          </td>
+          <td>5 estrellas · frente al Guggenheim</td>
+        </tr>
+        <tr>
+          <td>29 - 30 agosto</td>
+          <td>San Sebastián</td>
+          <td><a href="https://conventosanmartin.zenithoteles.com/en/" target="_blank" rel="noopener">Zenit Convento San
+              Martín</a></td>
+          <td>4 estrellas · centro / La Concha</td>
+        </tr>
+        <tr>
+          <td>31 agosto - 02 septiembre</td>
+          <td>Rioja / Briones</td>
+          <td><a href="https://santamariabriones.com/en/" target="_blank" rel="noopener">Santa María Briones</a></td>
+          <td>Boutique hotel · Michelin Key</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="section">
+    <h2>Inversión y condiciones</h2>
+    <div class="pricing">
+      <div class="price"><span>Precio por persona</span><strong>$8,995 USD</strong><small>Base habitación doble</small>
+      </div>
+      <div class="price"><span>Suplemento single</span><strong>+$2,571 USD</strong><small>Habitación individual</small>
+      </div>
+      <div class="price"><span>Pago a 6 meses</span><strong>$1,499 USD</strong><small>Mensuales</small></div>
+      <div class="price"><span>Pago a 12 meses</span><strong>$809 USD</strong><small>Mensuales</small></div>
+    </div>
+    <p class="note">*Algunas visitas, actividades, reservaciones gastronómicas y hoteles podrían variar. Consulta
+      términos y condiciones. Propuesta sujeta a disponibilidad al momento de reservar.</p>
+  </section>
+  <footer class="footer">
+    <div><strong>Galés Diseño de Viajes</strong><br>Alejandro Mexsen × Viajes Gales<br>Gastro Fun País Vasco · Agosto -
+      Septiembre 2026</div>
+    <div style="text-align:right"><a class="cta" href="http://wa.link/f9tpxb" target="_blank" rel="noopener">Enviar
+        mensaje</a><br><br><a href="https://www.instagram.com/amexsen.xp/" target="_blank"
+        rel="noopener">@amexsen.xp</a> · <a href="https://www.instagram.com/viajesgales/" target="_blank"
+        rel="noopener">@viajesgales</a></div>
+  </footer>
+</main>
